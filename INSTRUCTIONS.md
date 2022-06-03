@@ -2,6 +2,8 @@ Instructions
 ============
 Welcome to the ArtisticCV instructions.
 
+Issues encountered during installation and setup with their solutions are listed after setup instructions
+
 1 - Installation
 ----------------
 The steps to install the basic programs necessary include:
@@ -40,6 +42,16 @@ The steps to setting up this repository include:
     > }
     > ```
 
+    Issues With Installation and Setup:
+    Windows:
+    . If pip is installed but the command pip install -r requirements.txt prints that pip was not found try the command pip3 install -r requirements.txt
+    . If pip install -r requirements.txt returns an error saying that geos_c.dll is not found, 
+        . Go to https://www.dll-files.com/geos_c.dll.html
+        . Download the geos_c.dll
+        . Copy the file into the C:\Windows\System32\ directory
+        . Reboot
+        . If error does not go away try the other listed solutions: https://www.dll-files.com/support/#200924305 under General > how to install
+    
 3 - Running
 -----------
 1. Run `main.py` with Python
